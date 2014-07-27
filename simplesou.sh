@@ -1,6 +1,6 @@
 #!/bin/bash
 
-basehost="$1"
+basehost=$(echo "$1" | cut -d '/' -f3| sed -e 's|http://||Ig' -e 's|/||Ig' -e 's|tagged||Ig')
 id="$2"
 wget="wget -nv"
 apikey=$(cat api.key)

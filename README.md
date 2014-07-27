@@ -5,7 +5,7 @@ SimpleTum is a few simple bash scripts to rip content from tumblr blogs.
 Usage
 -------------
 
-./simpletum.sh example.tumblr.com tag
+./simpletum.sh http://example.tumblr.com/tagged/me
 
 'tag' is optional allowing you to download only the posts with given tag.
 

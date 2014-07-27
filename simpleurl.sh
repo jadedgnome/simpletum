@@ -1,7 +1,7 @@
 #!/bin/bash
 
-basehost="$1"
-tag="$2"
+basehost=$(echo "$1" | cut -d '/' -f3| sed -e 's|http://||Ig' -e 's|/||Ig' -e 's|tagged||Ig')
+tag=$(echo "$2" | cut -d '/' -f 5)
 wget="wget -q"
 apikey=$(cat api.key)
 offset=0
